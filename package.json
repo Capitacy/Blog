@@ -1,0 +1,17 @@
+{
+  "name": "Blog",
+  "version": "0.0.1",
+  "description": "Blog with react and wordpress API",
+  "main": "index.js",
+  "repository": "git@github.com:thisisoshan/blog.git",
+  "author": "Oshan Shrestha <oshan_shrestha@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "minimatch": "^3.0.4",
+    "next": "^2.4.9",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
