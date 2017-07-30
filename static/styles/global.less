@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Cinzel|Raleway|Montserrat');
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    display: inline;
+}
+body {
+    height: 100%;
+    width: 100%;
+    color: #333;
+    font-family: 'Cinzel', cursive;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+
+    main {
+        height: 100%;
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-family: 'Raleway', monospace;
+            font-weight: lighter;
+            text-transform: uppercase;
+            letter-spacing: 3.5px;
+        }
+
+        .hero {
+            height: 330px;
+            width: 1200px;
+            padding: 40px 0 0 0;
+            margin: 0 auto;
+            text-align: center;
+            
+            .logo-name {
+                height: 150px;
+                width: 150px;
+                margin: 0 auto 10px auto;
+                display: block;
+
+                .logo {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    border: 1px inset #444;
+                }
+            }
+
+            hr {
+                width: 60%;
+                margin: 0 20% 0 20%;
+            }
+
+            .social {
+                height: 20px;
+                width: 200px;
+                margin: 10px auto;
+            }
+
+            .social .links {
+                height: 100%;
+                width: 20%;
+                display: inline-block;
+                color: #888;
+            }
+            .social .links a {
+                color: inherit;
+                transition: 0.35s ease;
+            }
+            .social .links a:hover {
+                color: #111;
+            }
+        }
+    }
+}
