@@ -4,6 +4,14 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _regenerator = require('babel-runtime/regenerator');
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -40,6 +48,12 @@ var _head = require('next\\dist\\lib\\head.js');
 
 var _head2 = _interopRequireDefault(_head);
 
+var _BlogPost = require('../components/BlogPost');
+
+var _BlogPost2 = _interopRequireDefault(_BlogPost);
+
+require('isomorphic-fetch');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = 'C:\\Users\\oshan\\Documents\\Projects\\Blog\\pages\\index.js?entry';
@@ -60,42 +74,83 @@ var _class = function (_React$Component) {
             return _react2.default.createElement('div', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 9
+                    lineNumber: 17
                 }
             }, _react2.default.createElement(_head2.default, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 10
+                    lineNumber: 18
                 }
             }, _react2.default.createElement('title', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 11
+                    lineNumber: 19
                 }
             }, 'Blog - Oshan Shrestha'), _react2.default.createElement('link', { rel: 'stylesheet', href: 'static/build/styles/global.css', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 12
+                    lineNumber: 20
                 }
-            }), _react2.default.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', integrity: 'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin: 'anonymous', __source: {
+            }), _react2.default.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 13
+                    lineNumber: 21
                 }
             })), _react2.default.createElement('main', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 15
+                    lineNumber: 23
                 }
             }, _react2.default.createElement(_HeroHead2.default, { fullName: 'Oshan Shrestha', slogan: 'A high-school graduate web developer.', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 16
+                    lineNumber: 24
                 }
             }), _react2.default.createElement('h2', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 17
+                    lineNumber: 25
                 }
-            }, 'Blog')));
+            }, 'BLOG'), this.props.data.posts.map(function (post, i) {
+                return _react2.default.createElement(_BlogPost2.default, { key: i, title: post.title, content: post.content, category: post.categories, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 28
+                    }
+                });
+            })));
         }
+    }], [{
+        key: 'getInitialProps',
+        value: function () {
+            var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+                var res, data;
+                return _regenerator2.default.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return fetch('http://localhost/wordpress/wp/?json=1');
+
+                            case 2:
+                                res = _context.sent;
+                                _context.next = 5;
+                                return res.json();
+
+                            case 5:
+                                data = _context.sent;
+                                return _context.abrupt('return', { data: data });
+
+                            case 7:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function getInitialProps() {
+                return _ref.apply(this, arguments);
+            }
+
+            return getInitialProps;
+        }()
     }]);
 
     return _class;

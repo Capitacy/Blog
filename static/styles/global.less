@@ -29,9 +29,9 @@ body {
         height: 100%;
         width: 1200px;
         margin: 0 auto;
-        text-align: center;
 
         h2 {
+            text-align: center;
             font-family: 'Raleway', monospace;
             font-weight: lighter;
             text-transform: uppercase;
@@ -39,7 +39,7 @@ body {
         }
 
         .hero {
-            height: 330px;
+            height: 350px;
             width: 1200px;
             padding: 40px 0 0 0;
             margin: 0 auto;
@@ -82,6 +82,40 @@ body {
             }
             .social .links a:hover {
                 color: #111;
+            }
+
+            
+        }
+        .blog-content {
+            text-align: left;
+            width: 60%;
+            margin: 50px auto;
+
+            .blog-post {
+                position: relative;
+
+                p {
+                    margin: 20px auto;
+                }
+
+                .category {
+                    position: absolute;
+                    top: 3.5px;
+                    right: 5px;
+                    font-family: 'Raleway', monospace;
+                    font-size: 0.75em;
+
+                    p {
+                        display: inline;
+                        background: #eee;
+                        padding: 2px 2px;
+                        margin: 0 3px;
+                    }
+                }
+            }
+            hr {
+                border-color: #aaa;
+                border-style: dotted;
             }
         }
     }
