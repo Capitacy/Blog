@@ -44,13 +44,13 @@ var _HeroHead = require('../components/HeroHead');
 
 var _HeroHead2 = _interopRequireDefault(_HeroHead);
 
-var _head = require('next\\dist\\lib\\head.js');
-
-var _head2 = _interopRequireDefault(_head);
-
 var _BlogPost = require('../components/BlogPost');
 
 var _BlogPost2 = _interopRequireDefault(_BlogPost);
+
+var _head = require('next\\dist\\lib\\head.js');
+
+var _head2 = _interopRequireDefault(_head);
 
 require('isomorphic-fetch');
 
@@ -74,44 +74,48 @@ var _class = function (_React$Component) {
             return _react2.default.createElement('div', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 17
+                    lineNumber: 18
                 }
             }, _react2.default.createElement(_head2.default, {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
-                }
-            }, _react2.default.createElement('title', {
-                __source: {
-                    fileName: _jsxFileName,
                     lineNumber: 19
                 }
-            }, 'Blog - Oshan Shrestha'), _react2.default.createElement('link', { rel: 'stylesheet', href: 'static/build/styles/global.css', __source: {
+            }, _react2.default.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 20
                 }
-            }), _react2.default.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', __source: {
+            }), _react2.default.createElement('title', {
+                __source: {
                     fileName: _jsxFileName,
                     lineNumber: 21
+                }
+            }, 'Blog - Oshan Shrestha'), _react2.default.createElement('link', { rel: 'stylesheet', href: 'static/build/styles/global.css', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 22
+                }
+            }), _react2.default.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 23
                 }
             })), _react2.default.createElement('main', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 23
+                    lineNumber: 25
                 }
-            }, _react2.default.createElement(_HeroHead2.default, { fullName: 'Oshan Shrestha', slogan: 'A high-school graduate web developer.', __source: {
+            }, _react2.default.createElement(_HeroHead2.default, { fullName: 'Oshan Shrestha', slogan: 'A high-school graduate web developer', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 24
+                    lineNumber: 26
                 }
             }), _react2.default.createElement('h2', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 25
+                    lineNumber: 27
                 }
             }, 'BLOG'), this.props.data.posts.map(function (post, i) {
-                return _react2.default.createElement(_BlogPost2.default, { key: i, title: post.title, content: post.content, category: post.categories, __source: {
+                return _react2.default.createElement(_BlogPost2.default, { key: i, title: post.title, content: post.excerpt, date: post.date.substring(0, 11), category: post.categories, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 28
+                        lineNumber: 30
                     }
                 });
             })));

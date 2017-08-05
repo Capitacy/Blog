@@ -9,6 +9,12 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
+
+::selection {
+    color: #333;
+    background: #ddd;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -23,7 +29,6 @@ body {
     font-family: 'Cinzel', cursive;
     display: flex;
     justify-content: center;
-    user-select: none;
 
     main {
         height: 100%;
@@ -90,6 +95,7 @@ body {
             text-align: left;
             width: 60%;
             margin: 50px auto;
+            font-family: 'Raleway', monospace;
 
             .blog-post {
                 position: relative;
@@ -102,11 +108,16 @@ body {
                     position: absolute;
                     top: 3.5px;
                     right: 5px;
-                    font-family: 'Raleway', monospace;
-                    font-size: 0.75em;
+                    
+                    .cate-date {
+                        display: inline;
+                        font-size: 0.90em;
+                        margin: 0 6px;
+                    }
 
                     p {
                         display: inline;
+                        font-size: 0.75em;
                         background: #eee;
                         padding: 2px 2px;
                         margin: 0 3px;

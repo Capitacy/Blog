@@ -45,47 +45,56 @@ var _class = function (_Component) {
     (0, _createClass3.default)(_class, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("div", { className: "blog-content", __source: {
+            return _react2.default.createElement("div", {
+                __source: {
                     fileName: _jsxFileName,
                     lineNumber: 6
                 }
-            }, _react2.default.createElement("div", { className: "blog-post", __source: {
+            }, _react2.default.createElement("div", { className: "blog-content", __source: {
                     fileName: _jsxFileName,
                     lineNumber: 7
+                }
+            }, _react2.default.createElement("div", { className: "blog-post", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 8
                 }
             }, _react2.default.createElement("h3", {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 8
+                    lineNumber: 9
                 }
             }, this.props.title), _react2.default.createElement("p", { dangerouslySetInnerHTML: {
                     __html: this.props.content
                 },
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 9
+                    lineNumber: 10
                 }
             }), _react2.default.createElement("div", { className: "category", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 13
+                    lineNumber: 14
                 }
-            }, this.props.category != "" ? this.props.category.map(function (post, i) {
+            }, _react2.default.createElement("div", { className: "cate-date", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 15
+                }
+            }, this.props.date), this.props.category != "" ? this.props.category.map(function (post, i) {
                 return _react2.default.createElement("p", { key: i, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 15
+                        lineNumber: 17
                     }
                 }, post.title);
             }) : _react2.default.createElement("p", {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 15
+                    lineNumber: 17
                 }
             }, "Uncategorised"))), _react2.default.createElement("hr", {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 19
+                    lineNumber: 21
                 }
-            }));
+            })));
         }
     }]);
 
