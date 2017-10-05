@@ -6,7 +6,7 @@ export default class extends Component {
         <div>
             <div className="blog-content">
                 <div className="blog-post">
-                    <h3>{this.props.title}</h3>
+                    <h3><a href={this.props.urlPath}>{this.props.title}</a></h3>
                     <p dangerouslySetInnerHTML={{
                         __html: this.props.content
                         }}
@@ -18,7 +18,6 @@ export default class extends Component {
                         }
                     </div>
                 </div>
-                <hr />
             </div>
         </div>
         )

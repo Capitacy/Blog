@@ -4,31 +4,31 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _regenerator = require('babel-runtime/regenerator');
+var _regenerator = require('next\\node_modules\\babel-runtime/regenerator');
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');
+var _asyncToGenerator2 = require('next\\node_modules\\babel-runtime/helpers/asyncToGenerator');
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
-var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+var _getPrototypeOf = require('next\\node_modules\\babel-runtime/core-js/object/get-prototype-of');
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+var _classCallCheck2 = require('next\\node_modules\\babel-runtime/helpers/classCallCheck');
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = require('babel-runtime/helpers/createClass');
+var _createClass2 = require('next\\node_modules\\babel-runtime/helpers/createClass');
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+var _possibleConstructorReturn2 = require('next\\node_modules\\babel-runtime/helpers/possibleConstructorReturn');
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = require('babel-runtime/helpers/inherits');
+var _inherits2 = require('next\\node_modules\\babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -56,7 +56,7 @@ require('isomorphic-fetch');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'C:\\Users\\oshan\\Documents\\Projects\\Blog\\pages\\index.js?entry';
+var _jsxFileName = 'D:\\Blog\\pages\\index.js?entry';
 
 
 var _class = function (_React$Component) {
@@ -92,30 +92,30 @@ var _class = function (_React$Component) {
                 }
             }, 'Blog - Oshan Shrestha'), _react2.default.createElement('link', { rel: 'stylesheet', href: 'static/build/styles/global.css', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 22
+                    lineNumber: 23
                 }
             }), _react2.default.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 23
+                    lineNumber: 24
                 }
             })), _react2.default.createElement('main', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 25
+                    lineNumber: 26
                 }
             }, _react2.default.createElement(_HeroHead2.default, { fullName: 'Oshan Shrestha', slogan: 'A high-school graduate web developer', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 26
+                    lineNumber: 27
                 }
             }), _react2.default.createElement('h2', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 27
+                    lineNumber: 28
                 }
             }, 'BLOG'), this.props.data.posts.map(function (post, i) {
-                return _react2.default.createElement(_BlogPost2.default, { key: i, title: post.title, content: post.excerpt, date: post.date.substring(0, 11), category: post.categories, __source: {
+                return _react2.default.createElement(_BlogPost2.default, { key: i, urlPath: post.url, title: post.title, content: post.excerpt, date: post.date.substring(0, 11), category: post.categories, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 30
+                        lineNumber: 31
                     }
                 });
             })));
@@ -123,7 +123,7 @@ var _class = function (_React$Component) {
     }], [{
         key: 'getInitialProps',
         value: function () {
-            var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+            var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
                 var res, data;
                 return _regenerator2.default.wrap(function _callee$(_context) {
                     while (1) {
@@ -161,3 +161,4 @@ var _class = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = _class;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxpbmRleC5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsIlJlYWN0RE9NIiwiSGVyb0hlYWQiLCJCbG9nUG9zdCIsIkhlYWQiLCJwcm9wcyIsImRhdGEiLCJwb3N0cyIsIm1hcCIsInBvc3QiLCJpIiwidXJsIiwidGl0bGUiLCJleGNlcnB0IiwiZGF0ZSIsInN1YnN0cmluZyIsImNhdGVnb3JpZXMiLCJmZXRjaCIsInJlcyIsImpzb24iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQVM7Ozs7QUFDaEIsQUFBTzs7OztBQUNQLEFBQU87Ozs7QUFDUCxBQUFPOzs7O0FBQ1AsQUFBTzs7OztBQUNQOzs7Ozs7Ozs7Ozs7Ozs7Ozs7aUNBVWEsQUFDTDttQ0FDSSxjQUFBOzs4QkFBQTtnQ0FBQSxBQUNJO0FBREo7QUFBQSxhQUFBLGtCQUNJLEFBQUM7OzhCQUFEO2dDQUFBLEFBQ0k7QUFESjtBQUFBLHVEQUNVLE1BQU4sQUFBVyxZQUFXLFNBQXRCLEFBQThCOzhCQUE5QjtnQ0FESixBQUNJLEFBQ0E7QUFEQTtnQ0FDQSxjQUFBOzs4QkFBQTtnQ0FBQTtBQUFBO0FBQUEsZUFGSixBQUVJLEFBRUEsa0VBQU0sS0FBTixBQUFVLGNBQWEsTUFBdkIsQUFBNEI7OEJBQTVCO2dDQUpKLEFBSUksQUFDQTtBQURBO3dEQUNNLE1BQU4sQUFBVywrRUFBOEUsS0FBekYsQUFBNkY7OEJBQTdGO2dDQU5SLEFBQ0ksQUFLSSxBQUVKO0FBRkk7aUNBRUosY0FBQTs7OEJBQUE7Z0NBQUEsQUFDSTtBQURKO0FBQUEsK0JBQ0ksQUFBQyxvQ0FBUyxVQUFWLEFBQW1CLGtCQUFpQixRQUFwQyxBQUEyQzs4QkFBM0M7Z0NBREosQUFDSSxBQUNBO0FBREE7Z0NBQ0EsY0FBQTs7OEJBQUE7Z0NBQUE7QUFBQTtBQUFBLGVBRkosQUFFSSxBQUVJLGNBQUEsQUFBSyxNQUFMLEFBQVcsS0FBWCxBQUFnQixNQUFoQixBQUFzQixJQUFJLFVBQUEsQUFBUyxNQUFULEFBQWUsR0FBRyxBQUN4Qzt1Q0FBTyxBQUFDLG9DQUFTLEtBQVYsQUFBZSxHQUFHLFNBQVMsS0FBM0IsQUFBZ0MsS0FBSyxPQUFPLEtBQTVDLEFBQWlELE9BQU8sU0FBUyxLQUFqRSxBQUFzRSxTQUFTLE1BQU0sS0FBQSxBQUFLLEtBQUwsQUFBVSxVQUFWLEFBQW9CLEdBQXpHLEFBQXFGLEFBQXVCLEtBQUssVUFBVSxLQUEzSCxBQUFnSTtrQ0FBaEk7b0NBQVAsQUFBTyxBQUNWO0FBRFU7aUJBQUE7QUFkM0IsQUFDSSxBQVFJLEFBSVEsQUFPbkI7Ozs7Ozs7Ozs7Ozt1Q0ExQnFCLE1BQUEsQUFBTSxBOztpQ0FBbEI7QTs7dUNBQ2EsSUFBQSxBQUFJLEE7O2lDQUFqQjtBO2lFQUNDLEVBQUUsTUFBRixBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0VBTGMsZ0JBQU0sQSIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiJEOi9CbG9nIn0=

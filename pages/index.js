@@ -19,6 +19,7 @@ export default class extends React.Component {
                 <Head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <title>Blog - Oshan Shrestha</title>
+
                     <link rel="stylesheet" href="static/build/styles/global.css" />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
                 </Head>
@@ -27,7 +28,7 @@ export default class extends React.Component {
                     <h2>BLOG</h2>
                     {
                         this.props.data.posts.map(function(post, i) {
-                            return <BlogPost key={i} title={post.title} content={post.excerpt} date={post.date.substring(0, 11)} category={post.categories} />
+                            return <BlogPost key={i} urlPath={post.url} title={post.title} content={post.excerpt} date={post.date.substring(0, 11)} category={post.categories} />
                         })
                     }
                 </main>

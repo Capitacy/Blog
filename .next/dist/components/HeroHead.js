@@ -4,23 +4,23 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
+var _getPrototypeOf = require('next\\node_modules\\babel-runtime/core-js/object/get-prototype-of');
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
+var _classCallCheck2 = require('next\\node_modules\\babel-runtime/helpers/classCallCheck');
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = require('babel-runtime/helpers/createClass');
+var _createClass2 = require('next\\node_modules\\babel-runtime/helpers/createClass');
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
+var _possibleConstructorReturn2 = require('next\\node_modules\\babel-runtime/helpers/possibleConstructorReturn');
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = require('babel-runtime/helpers/inherits');
+var _inherits2 = require('next\\node_modules\\babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -34,7 +34,7 @@ var _reactFontawesome2 = _interopRequireDefault(_reactFontawesome);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'C:\\Users\\oshan\\Documents\\Projects\\Blog\\components\\HeroHead.js';
+var _jsxFileName = 'D:\\Blog\\components\\HeroHead.js';
 
 
 var _class = function (_Component) {
@@ -152,3 +152,4 @@ var _class = function (_Component) {
 }(_react.Component);
 
 exports.default = _class;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXEhlcm9IZWFkLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiRm9udEF3ZXNvbWUiLCJfX2Rpcm5hbWUiLCJwcm9wcyIsImZ1bGxOYW1lIiwic2xvZ2FuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztpQ0FHTSxBQUNMO21DQUNJLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFDSTtBQURKO2FBQUEsa0JBQ0ksY0FBQSxTQUFLLFdBQUwsQUFBZTs4QkFBZjtnQ0FBQSxBQUNJO0FBREo7c0RBQ1MsV0FBTCxBQUFlLFFBQU8sS0FBdEIsQUFBMEIsMEJBQXlCLEtBQW5ELEFBQXVEOzhCQUF2RDtnQ0FGUixBQUNJLEFBQ0ksQUFFSjtBQUZJO2lDQUVKLGNBQUEsT0FBRyxNQUFILEFBQVM7OEJBQVQ7Z0NBQUEsQUFBb0I7QUFBcEI7K0JBQW9CLGNBQUE7OzhCQUFBO2dDQUFBLEFBQUs7QUFBTDtBQUFBLG9CQUFLLEFBQUssTUFKbEMsQUFJSSxBQUFvQixBQUFnQixBQUNwQyw0QkFBQSxjQUFBOzs4QkFBQTtnQ0FBQSxBQUFLO0FBQUw7QUFBQSxvQkFBSyxBQUFLLE1BTGQsQUFLSSxBQUFnQixBQUNoQix5QkFBQSxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQ0k7QUFESjsrQkFDSSxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQXVCO0FBQXZCOytCQUF1QixjQUFBLE9BQUcsTUFBSCxBQUFROzhCQUFSO2dDQUFBLEFBQVk7QUFBWjsrQkFBWSxBQUFDLDRDQUFZLE1BQWIsQUFBa0I7OEJBQWxCO2dDQUR2QyxBQUNJLEFBQXVCLEFBQVksQUFDbkM7QUFEbUM7a0NBQ25DLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFBdUI7QUFBdkI7K0JBQXVCLGNBQUEsT0FBRyxNQUFILEFBQVE7OEJBQVI7Z0NBQUEsQUFBWTtBQUFaOytCQUFZLEFBQUMsNENBQVksTUFBYixBQUFrQjs4QkFBbEI7Z0NBRnZDLEFBRUksQUFBdUIsQUFBWSxBQUNuQztBQURtQztrQ0FDbkMsY0FBQSxTQUFLLFdBQUwsQUFBZTs4QkFBZjtnQ0FBQSxBQUF1QjtBQUF2QjsrQkFBdUIsY0FBQSxPQUFHLE1BQUgsQUFBUTs4QkFBUjtnQ0FBQSxBQUFZO0FBQVo7K0JBQVksQUFBQyw0Q0FBWSxNQUFiLEFBQWtCOzhCQUFsQjtnQ0FIdkMsQUFHSSxBQUF1QixBQUFZLEFBQ25DO0FBRG1DO2tDQUNuQyxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQXVCO0FBQXZCOytCQUF1QixjQUFBLE9BQUcsTUFBSCxBQUFROzhCQUFSO2dDQUFBLEFBQVk7QUFBWjsrQkFBWSxBQUFDLDRDQUFZLE1BQWIsQUFBa0I7OEJBQWxCO2dDQUp2QyxBQUlJLEFBQXVCLEFBQVksQUFDbkM7QUFEbUM7a0NBQ25DLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFBdUI7QUFBdkI7K0JBQXVCLGNBQUEsT0FBRyxNQUFILEFBQVE7OEJBQVI7Z0NBQUEsQUFBWTtBQUFaOytCQUFZLEFBQUMsNENBQVksTUFBYixBQUFrQjs4QkFBbEI7Z0NBWDNDLEFBTUksQUFLSSxBQUF1QixBQUFZLEFBRXZDO0FBRnVDOzs7OEJBRXZDO2dDQWRSLEFBQ0ksQUFhSSxBQUdYO0FBSFc7QUFBQTs7Ozs7QUFoQmEsQSIsImZpbGUiOiJIZXJvSGVhZC5qcyIsInNvdXJjZVJvb3QiOiJEOi9CbG9nIn0=

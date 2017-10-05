@@ -11,9 +11,9 @@
     "gulp-css": "^0.1.0",
     "gulp-less": "^3.3.2",
     "gulp-watch": "^4.3.11",
-    "next": "^2.4.9",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "next": "^3.2.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
     "react-fontawesome": "^1.6.1"
   },
   "scripts": {
