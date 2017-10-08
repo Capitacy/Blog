@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 
 
 export default class extends React.Component {
@@ -7,7 +6,7 @@ export default class extends React.Component {
         return(
             <div>
                 <h1>
-                    This works!!!
+                    This is post page.
                 </h1>
             </div>
         )

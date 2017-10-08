@@ -28,7 +28,7 @@ export default class extends React.Component {
                     <h2>BLOG</h2>
                     {
                         this.props.data.posts.map(function(post, i) {
-                            return <BlogPost key={i} urlPath={post.url} title={post.title} content={post.excerpt} date={post.date.substring(0, 11)} category={post.categories} />
+                            return <BlogPost key={i} slug={post.slug} title={post.title} content={post.excerpt} date={post.date.substring(0, 11)} category={post.categories} />
                         })
                     }
                 </main>
