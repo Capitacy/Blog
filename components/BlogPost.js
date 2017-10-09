@@ -11,12 +11,11 @@ export default class extends Component {
                         {
                             pathname: '/post',
                             query: {
-                                y: this.props.date.substr(0, 4),
-                                m: this.props.date.substr(5, 2),
-                                d: this.props.date.substr(8, 2),
-                                s: this.props.slug
-                            },
-                            asPath: '/post/2017'
+                                b: this.props.date.substr(0, 4),
+                                l: this.props.date.substr(5, 2),
+                                o: this.props.date.substr(8, 2),
+                                g: this.props.slug
+                            }
                         }                         
                          }><a>{this.props.title}</a></Link></h3>
                     <p dangerouslySetInnerHTML={
@@ -28,7 +27,19 @@ export default class extends Component {
                     <div className="category">
                         <div className="cate-date">{this.props.date}</div>
                         {
-                            this.props.category != "" ? this.props.category.map(function(post, i) { return <p key={i}>{post.title}</p> }) : <p>Uncategorised</p>
+                            this.props.category != "" ? this.props.category.map(function(post, i) {
+                                return <Link href={{
+                                    pathname: '/categories',
+                                    query: {
+                                        s: post.slug
+                                    }
+                                }}><a><p key={i}>{post.title}</p></a></Link>
+                            }) : <Link href={{
+                                pathname: '/categories',
+                                query: {
+                                    s: 'uncategorized'
+                                }
+                            }}><a><p>Uncategorized</p></a></Link>
                         }
                     </div>
                 </div>

@@ -49,102 +49,112 @@ var _class = function (_Component) {
     (0, _createClass3.default)(_class, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement('div', { className: 'hero', __source: {
+            return _react2.default.createElement('div', {
+                __source: {
                     fileName: _jsxFileName,
                     lineNumber: 7
                 }
-            }, _react2.default.createElement('div', { className: 'logo-name', __source: {
+            }, _react2.default.createElement('div', { className: 'hero', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 8
                 }
-            }, _react2.default.createElement('img', { className: 'logo', src: 'static/images/logo.jpg', alt: 'Logo', __source: {
+            }, _react2.default.createElement('div', { className: 'logo-name', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 9
                 }
+            }, _react2.default.createElement('img', { className: 'logo', src: 'static/images/logo.jpg', alt: 'Logo', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 10
+                }
             })), _react2.default.createElement('a', { href: __dirname, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 11
+                    lineNumber: 12
                 }
             }, _react2.default.createElement('h1', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 11
+                    lineNumber: 12
                 }
             }, this.props.fullName)), _react2.default.createElement('h3', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 12
+                    lineNumber: 13
                 }
             }, this.props.slogan), _react2.default.createElement('div', { className: 'social', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 13
+                    lineNumber: 14
                 }
             }, _react2.default.createElement('div', { className: 'links', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 14
+                    lineNumber: 15
                 }
             }, _react2.default.createElement('a', { href: '#', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 14
+                    lineNumber: 15
                 }
             }, _react2.default.createElement(_reactFontawesome2.default, { name: 'facebook', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 14
+                    lineNumber: 15
                 }
             }))), _react2.default.createElement('div', { className: 'links', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 15
+                    lineNumber: 16
                 }
             }, _react2.default.createElement('a', { href: '#', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 15
+                    lineNumber: 16
                 }
             }, _react2.default.createElement(_reactFontawesome2.default, { name: 'twitter', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 15
+                    lineNumber: 16
                 }
             }))), _react2.default.createElement('div', { className: 'links', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 16
+                    lineNumber: 17
                 }
             }, _react2.default.createElement('a', { href: '#', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 16
+                    lineNumber: 17
                 }
             }, _react2.default.createElement(_reactFontawesome2.default, { name: 'instagram', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 16
+                    lineNumber: 17
                 }
             }))), _react2.default.createElement('div', { className: 'links', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 17
+                    lineNumber: 18
                 }
             }, _react2.default.createElement('a', { href: '#', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 17
+                    lineNumber: 18
                 }
             }, _react2.default.createElement(_reactFontawesome2.default, { name: 'linkedin', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 17
+                    lineNumber: 18
                 }
             }))), _react2.default.createElement('div', { className: 'links', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
+                    lineNumber: 19
                 }
             }, _react2.default.createElement('a', { href: '#', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
+                    lineNumber: 19
                 }
             }, _react2.default.createElement(_reactFontawesome2.default, { name: 'skype', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
+                    lineNumber: 19
                 }
             })))), _react2.default.createElement('hr', {
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 20
+                    lineNumber: 21
                 }
-            }));
+            })), _react2.default.createElement('h2', {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 23
+                }
+            }, this.props.type));
         }
     }]);
 
@@ -152,4 +162,4 @@ var _class = function (_Component) {
 }(_react.Component);
 
 exports.default = _class;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXEhlcm9IZWFkLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiRm9udEF3ZXNvbWUiLCJfX2Rpcm5hbWUiLCJwcm9wcyIsImZ1bGxOYW1lIiwic2xvZ2FuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztpQ0FHTSxBQUNMO21DQUNJLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFDSTtBQURKO2FBQUEsa0JBQ0ksY0FBQSxTQUFLLFdBQUwsQUFBZTs4QkFBZjtnQ0FBQSxBQUNJO0FBREo7c0RBQ1MsV0FBTCxBQUFlLFFBQU8sS0FBdEIsQUFBMEIsMEJBQXlCLEtBQW5ELEFBQXVEOzhCQUF2RDtnQ0FGUixBQUNJLEFBQ0ksQUFFSjtBQUZJO2lDQUVKLGNBQUEsT0FBRyxNQUFILEFBQVM7OEJBQVQ7Z0NBQUEsQUFBb0I7QUFBcEI7K0JBQW9CLGNBQUE7OzhCQUFBO2dDQUFBLEFBQUs7QUFBTDtBQUFBLG9CQUFLLEFBQUssTUFKbEMsQUFJSSxBQUFvQixBQUFnQixBQUNwQyw0QkFBQSxjQUFBOzs4QkFBQTtnQ0FBQSxBQUFLO0FBQUw7QUFBQSxvQkFBSyxBQUFLLE1BTGQsQUFLSSxBQUFnQixBQUNoQix5QkFBQSxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQ0k7QUFESjsrQkFDSSxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQXVCO0FBQXZCOytCQUF1QixjQUFBLE9BQUcsTUFBSCxBQUFROzhCQUFSO2dDQUFBLEFBQVk7QUFBWjsrQkFBWSxBQUFDLDRDQUFZLE1BQWIsQUFBa0I7OEJBQWxCO2dDQUR2QyxBQUNJLEFBQXVCLEFBQVksQUFDbkM7QUFEbUM7a0NBQ25DLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFBdUI7QUFBdkI7K0JBQXVCLGNBQUEsT0FBRyxNQUFILEFBQVE7OEJBQVI7Z0NBQUEsQUFBWTtBQUFaOytCQUFZLEFBQUMsNENBQVksTUFBYixBQUFrQjs4QkFBbEI7Z0NBRnZDLEFBRUksQUFBdUIsQUFBWSxBQUNuQztBQURtQztrQ0FDbkMsY0FBQSxTQUFLLFdBQUwsQUFBZTs4QkFBZjtnQ0FBQSxBQUF1QjtBQUF2QjsrQkFBdUIsY0FBQSxPQUFHLE1BQUgsQUFBUTs4QkFBUjtnQ0FBQSxBQUFZO0FBQVo7K0JBQVksQUFBQyw0Q0FBWSxNQUFiLEFBQWtCOzhCQUFsQjtnQ0FIdkMsQUFHSSxBQUF1QixBQUFZLEFBQ25DO0FBRG1DO2tDQUNuQyxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQXVCO0FBQXZCOytCQUF1QixjQUFBLE9BQUcsTUFBSCxBQUFROzhCQUFSO2dDQUFBLEFBQVk7QUFBWjsrQkFBWSxBQUFDLDRDQUFZLE1BQWIsQUFBa0I7OEJBQWxCO2dDQUp2QyxBQUlJLEFBQXVCLEFBQVksQUFDbkM7QUFEbUM7a0NBQ25DLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFBdUI7QUFBdkI7K0JBQXVCLGNBQUEsT0FBRyxNQUFILEFBQVE7OEJBQVI7Z0NBQUEsQUFBWTtBQUFaOytCQUFZLEFBQUMsNENBQVksTUFBYixBQUFrQjs4QkFBbEI7Z0NBWDNDLEFBTUksQUFLSSxBQUF1QixBQUFZLEFBRXZDO0FBRnVDOzs7OEJBRXZDO2dDQWRSLEFBQ0ksQUFhSSxBQUdYO0FBSFc7QUFBQTs7Ozs7QUFoQmEsQSIsImZpbGUiOiJIZXJvSGVhZC5qcyIsInNvdXJjZVJvb3QiOiJEOi9CbG9nIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXEhlcm9IZWFkLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiRm9udEF3ZXNvbWUiLCJfX2Rpcm5hbWUiLCJwcm9wcyIsImZ1bGxOYW1lIiwic2xvZ2FuIiwidHlwZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQVM7Ozs7QUFDaEIsQUFBTzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7aUNBR00sQUFDTDttQ0FDSSxjQUFBOzs4QkFBQTtnQ0FBQSxBQUNJO0FBREo7QUFBQSxhQUFBLGtCQUNJLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFDSTtBQURKOytCQUNJLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFDSTtBQURKO3NEQUNTLFdBQUwsQUFBZSxRQUFPLEtBQXRCLEFBQTBCLDBCQUF5QixLQUFuRCxBQUF1RDs4QkFBdkQ7Z0NBRlIsQUFDSSxBQUNJLEFBRUo7QUFGSTtpQ0FFSixjQUFBLE9BQUcsTUFBSCxBQUFTOzhCQUFUO2dDQUFBLEFBQW9CO0FBQXBCOytCQUFvQixjQUFBOzs4QkFBQTtnQ0FBQSxBQUFLO0FBQUw7QUFBQSxvQkFBSyxBQUFLLE1BSmxDLEFBSUksQUFBb0IsQUFBZ0IsQUFDcEMsNEJBQUEsY0FBQTs7OEJBQUE7Z0NBQUEsQUFBSztBQUFMO0FBQUEsb0JBQUssQUFBSyxNQUxkLEFBS0ksQUFBZ0IsQUFDaEIseUJBQUEsY0FBQSxTQUFLLFdBQUwsQUFBZTs4QkFBZjtnQ0FBQSxBQUNJO0FBREo7K0JBQ0ksY0FBQSxTQUFLLFdBQUwsQUFBZTs4QkFBZjtnQ0FBQSxBQUF1QjtBQUF2QjsrQkFBdUIsY0FBQSxPQUFHLE1BQUgsQUFBUTs4QkFBUjtnQ0FBQSxBQUFZO0FBQVo7K0JBQVksQUFBQyw0Q0FBWSxNQUFiLEFBQWtCOzhCQUFsQjtnQ0FEdkMsQUFDSSxBQUF1QixBQUFZLEFBQ25DO0FBRG1DO2tDQUNuQyxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQXVCO0FBQXZCOytCQUF1QixjQUFBLE9BQUcsTUFBSCxBQUFROzhCQUFSO2dDQUFBLEFBQVk7QUFBWjsrQkFBWSxBQUFDLDRDQUFZLE1BQWIsQUFBa0I7OEJBQWxCO2dDQUZ2QyxBQUVJLEFBQXVCLEFBQVksQUFDbkM7QUFEbUM7a0NBQ25DLGNBQUEsU0FBSyxXQUFMLEFBQWU7OEJBQWY7Z0NBQUEsQUFBdUI7QUFBdkI7K0JBQXVCLGNBQUEsT0FBRyxNQUFILEFBQVE7OEJBQVI7Z0NBQUEsQUFBWTtBQUFaOytCQUFZLEFBQUMsNENBQVksTUFBYixBQUFrQjs4QkFBbEI7Z0NBSHZDLEFBR0ksQUFBdUIsQUFBWSxBQUNuQztBQURtQztrQ0FDbkMsY0FBQSxTQUFLLFdBQUwsQUFBZTs4QkFBZjtnQ0FBQSxBQUF1QjtBQUF2QjsrQkFBdUIsY0FBQSxPQUFHLE1BQUgsQUFBUTs4QkFBUjtnQ0FBQSxBQUFZO0FBQVo7K0JBQVksQUFBQyw0Q0FBWSxNQUFiLEFBQWtCOzhCQUFsQjtnQ0FKdkMsQUFJSSxBQUF1QixBQUFZLEFBQ25DO0FBRG1DO2tDQUNuQyxjQUFBLFNBQUssV0FBTCxBQUFlOzhCQUFmO2dDQUFBLEFBQXVCO0FBQXZCOytCQUF1QixjQUFBLE9BQUcsTUFBSCxBQUFROzhCQUFSO2dDQUFBLEFBQVk7QUFBWjsrQkFBWSxBQUFDLDRDQUFZLE1BQWIsQUFBa0I7OEJBQWxCO2dDQVgzQyxBQU1JLEFBS0ksQUFBdUIsQUFBWSxBQUV2QztBQUZ1Qzs7OzhCQUV2QztnQ0FkUixBQUNJLEFBYUksQUFFSjtBQUZJO0FBQUEsaUNBRUosY0FBQTs7OEJBQUE7Z0NBQUEsQUFBSztBQUFMO0FBQUEsb0JBQUssQUFBSyxNQWpCbEIsQUFDSSxBQWdCSSxBQUFnQixBQUczQjs7Ozs7QUF0QndCLEEiLCJmaWxlIjoiSGVyb0hlYWQuanMiLCJzb3VyY2VSb290IjoiRDovQmxvZyJ9

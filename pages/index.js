@@ -24,8 +24,7 @@ export default class extends React.Component {
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
                 </Head>
                 <main>
-                    <HeroHead fullName="Oshan Shrestha" slogan="A high-school graduate web developer" />
-                    <h2>BLOG</h2>
+                    <HeroHead fullName="Oshan Shrestha" slogan="A high-school graduate web developer" type="BLOG" />
                     {
                         this.props.data.posts.map(function(post, i) {
                             return <BlogPost key={i} slug={post.slug} title={post.title} content={post.excerpt} date={post.date.substring(0, 11)} category={post.categories} />
