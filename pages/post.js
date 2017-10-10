@@ -8,7 +8,7 @@ import 'isomorphic-fetch'
 export default class extends React.Component {
 
     static async getInitialProps({ query: { b, l, o, g } }) {
-        const res = await fetch(`http://thisisoshan.co.nf/wp/${b}/${l}/${o}/${g}/?json=1`)
+        const res = await fetch(`http://localhost/wordpress/wp/${b}/${l}/${o}/${g}/?json=1`)
         const data = await res.json()
         return { data }
     }
@@ -92,7 +92,7 @@ export default class extends React.Component {
                     <p className="tags">
                         Tags: 
                         {
-                            this.props.data.post.tags != "" ? this.props.data.post.tags.map(function(post, i){return <Link href={{pathname: '/categories',query: {s: post.slug}}}><a><i title={post.description}>@{post.slug}</i></a></Link>}) :  <i>(empty)</i>
+                            this.props.data.post.tags != "" ? this.props.data.post.tags.map(function(post, i){return <Link href={{pathname: '/tag',query: {s: post.slug}}}><a><i title={post.description}>@{post.slug}</i></a></Link>}) :  <i>(empty)</i>
                         }
                     </p>
                 </main>

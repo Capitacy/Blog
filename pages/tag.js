@@ -10,13 +10,13 @@ import 'isomorphic-fetch'
 export default class extends React.Component {
 
     static async getInitialProps({query : {s}}) {
-        const ctch = await fetch(`http://localhost/wordpress/wp/category/${s}/?json=1`)
+        const ctch = await fetch(`http://localhost/wordpress/wp/tag/${s}/?json=1`)
         const data = await ctch.json()
         return { data }
     }
 
     titleCategory(props) {
-        return this.props.data.category.title == "Uncategorized" ? 'Uncategorized' : `Category: ${this.props.data.category.title}`
+        return `Tag: ${this.props.data.tag.title}`
     }
 
     render() {
@@ -33,8 +33,8 @@ export default class extends React.Component {
                 <main>
                     <HeroHead fullName="Oshan Shrestha" slogan="A high-school graduate web developer" type={ this.titleCategory() } />
                     <div className="post-meta">
-                        <p className="date-author"><FontAwesome className="sm-margin" name='file-text-o' />{this.props.data.category.description}</p>
-                        <p className="cates"><FontAwesome className="sm-margin" name='files-o' />{this.props.data.category.post_count}</p>
+                        <p className="date-author"><FontAwesome className="sm-margin" name='file-text-o' />{this.props.data.tag.description}</p>
+                        <p className="cates"><FontAwesome className="sm-margin" name='files-o' />{this.props.data.tag.post_count}</p>
                     </div>
                     {
                         this.props.data.posts.map(function(post, i) {

@@ -8,7 +8,7 @@ import 'isomorphic-fetch'
 export default class extends React.Component {
 
     static async getInitialProps() {
-        const res = await fetch('http://thisisoshan.co.nf/wp/?json=1')
+        const res = await fetch('http://localhost/wordpress/wp/?json=1')
         const data = await res.json()
         return { data }
     }
