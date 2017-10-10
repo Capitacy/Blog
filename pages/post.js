@@ -5,11 +5,10 @@ import FontAwesome from 'react-fontawesome'
 import HeroHead from '../components/HeroHead'
 import 'isomorphic-fetch'
 
-
 export default class extends React.Component {
 
     static async getInitialProps({ query: { b, l, o, g } }) {
-        const res = await fetch(`http://localhost/wordpress/wp/${b}/${l}/${o}/${g}/?json=1`)
+        const res = await fetch(`http://thisisoshan.co.nf/wp/${b}/${l}/${o}/${g}/?json=1`)
         const data = await res.json()
         return { data }
     }
@@ -48,7 +47,6 @@ export default class extends React.Component {
         }
         return q
     }
-
 
     render() {
         return(
