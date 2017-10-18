@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import HeroHead from '../components/HeroHead'
 import BlogPost from '../components/BlogPost'
+import Meta from '../components/Meta'
 import Head from 'next/head'
 import 'isomorphic-fetch'
 
 export default class extends React.Component {
 
     static async getInitialProps() {
-        const res = await fetch('http://localhost/wordpress/wp/?json=1')
+        const res = await fetch('http://localhost/wordpress/wp/v2/get_posts')
         const data = await res.json()
         return { data }
     }
@@ -17,7 +18,10 @@ export default class extends React.Component {
         return(
             <div>
                 <Head>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+                    <Meta />
                     <title>Blog - Oshan Shrestha</title>
 
                     <link rel="stylesheet" href="static/build/styles/global.css" />
@@ -27,7 +31,7 @@ export default class extends React.Component {
                     <HeroHead fullName="Oshan Shrestha" slogan="A high-school graduate web developer" type="BLOG" />
                     {
                         this.props.data.posts.map(function(post, i) {
-                            return <BlogPost key={i} slug={post.slug} title={post.title} content={post.excerpt} date={post.date.substring(0, 11)} category={post.categories} />
+                            return <BlogPost key={i} slug={post.slug} id={post.id} title={post.title} content={post.excerpt} date={post.date.substring(0, 11)} category={post.categories} />
                         })
                     }
                 </main>

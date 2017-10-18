@@ -7,16 +7,14 @@ export default class extends Component {
         <div>
             <div className="blog-content">
                 <div className="blog-post">
-                    <h3><Link prefetch href={
+                    <h3><Link href={
                         {
                             pathname: '/post',
                             query: {
-                                b: this.props.date.substr(0, 4),
-                                l: this.props.date.substr(5, 2),
-                                o: this.props.date.substr(8, 2),
-                                g: this.props.slug
+                                i: this.props.id,
+                                s: this.props.slug
                             }
-                        }                         
+                        }
                          }><a>{this.props.title}</a></Link></h3>
                     <p dangerouslySetInnerHTML={
                         {

@@ -33,7 +33,7 @@ export default class extends React.Component {
                 <main>
                     <HeroHead fullName="Oshan Shrestha" slogan="A high-school graduate web developer" type={ this.titleCategory() } />
                     <div className="post-meta">
-                        <p className="date-author"><FontAwesome className="sm-margin" name='file-text-o' />{this.props.data.category.description}</p>
+                        <p className="date-author"><FontAwesome className="sm-margin" name='file-text-o' />{this.props.data.category.description == "" ? "(no description provided)" : this.props.data.category.description}</p>
                         <p className="cates"><FontAwesome className="sm-margin" name='files-o' />{this.props.data.category.post_count}</p>
                     </div>
                     {

@@ -2,3 +2,5 @@ node_modules
 .gitignore
 static/styles
 .next
+gulpfile.js
+yarn.lock

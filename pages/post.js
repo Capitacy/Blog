@@ -5,10 +5,14 @@ import FontAwesome from 'react-fontawesome'
 import HeroHead from '../components/HeroHead'
 import 'isomorphic-fetch'
 
+const url = "http://localhost/wordpress/wp"
+const api = "v2"
+const mode = "get_post"
+
 export default class extends React.Component {
 
-    static async getInitialProps({ query: { b, l, o, g } }) {
-        const res = await fetch(`http://localhost/wordpress/wp/${b}/${l}/${o}/${g}/?json=1`)
+    static async getInitialProps({ query: { i, s }}) {
+        const res = await fetch(`${url}/${api}/${mode}/?id=${i}&slug=${s}`)
         const data = await res.json()
         return { data }
     }
@@ -20,27 +24,23 @@ export default class extends React.Component {
                 {
                     pathname: '/post',
                     query: {
-                        b: this.props.data.previous_url.substr(30, 4),
-                        l: this.props.data.previous_url.substr(35, 2),
-                        o: this.props.data.previous_url.substr(38, 2),
-                        g: this.props.data.previous_url.substr(41, this.props.data.previous_url.length - 42)
+                        i : '',
+                        s: this.props.data.previous_url.substr((url.length+12), this.props.data.previous_url.length - (url.length+13))
                     }
-                }                         
+                }
                  }><a><div className="navigate right"></div></a></Link>
         }
         return r
     }
     navCheckPrev(props) {
-        let q = ""
+        let q
         if (this.props.data.next_url) {
             return <Link href={
                 {
                     pathname: '/post',
                     query: {
-                        b: this.props.data.next_url.substr(30, 4),
-                        l: this.props.data.next_url.substr(35, 2),
-                        o: this.props.data.next_url.substr(38, 2),
-                        g: this.props.data.next_url.substr(41, this.props.data.next_url.length - 42)
+                        i: "",
+                        s: this.props.data.next_url.substr((url.length+12), this.props.data.next_url.length - (url.length+13))
                     }
                 }
                  }><a><div className="navigate left"></div></a></Link>
@@ -52,7 +52,8 @@ export default class extends React.Component {
         return(
             <div>
                 <Head>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
                     <title>
                     {
                         this.props.data.post.title.length > 0 ? this.props.data.post.title : 'Posts'
@@ -67,7 +68,7 @@ export default class extends React.Component {
                     <div className="post-meta">
                         <p className="date-author"><FontAwesome className="sm-margin" name='calendar' />{this.props.data.post.date.substr(0, 10)}</p>
                         <p className="cates">{this.props.data.post.categories != "" ? this.props.data.post.categories.map(function(post,i) {
-                            return <Link href={{
+                            return <Link key={i} href={{
                                 pathname: '/categories',
                                 query: {
                                     s: post.slug
@@ -92,9 +93,19 @@ export default class extends React.Component {
                     <p className="tags">
                         Tags: 
                         {
-                            this.props.data.post.tags != "" ? this.props.data.post.tags.map(function(post, i){return <Link href={{pathname: '/tag',query: {s: post.slug}}}><a><i title={post.description}>@{post.slug}</i></a></Link>}) :  <i>(empty)</i>
+                            this.props.data.post.tags != "" ? this.props.data.post.tags.map(function(post, i){return <Link key={i} href={{pathname: '/tag',query: {s: post.slug}}}><a><i title={post.description}>@{post.slug}</i></a></Link>}) :  <i>(empty)</i>
                         }
                     </p>
+                    <form className="comment-box">
+                        <h3>New Comment</h3>
+                        <p>Name<sup>*</sup></p>
+                        <input required type="text"/>
+                        <p>Email<sup>*</sup></p>
+                        <input required type="email"/>
+                        <p>Comment<sup>*</sup></p>
+                        <textarea rows="5" required type="text" ></textarea>
+                        <button>Submit</button>
+                    </form>
                 </main>
                     {
                         this.navCheckNext()
