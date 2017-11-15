@@ -23,7 +23,7 @@ export default class extends React.Component {
         return(
             <div>
                 <Head>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
                     <title>{`${this.titleCategory()} | Oshan Shrestha`}</title>
                     <link rel="stylesheet" href="static/build/styles/global.css" />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />

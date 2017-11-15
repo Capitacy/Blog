@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import FontAwesome from 'react-fontawesome'
 import HeroHead from '../components/HeroHead'
+import Comment from '../components/Comment'
 import 'isomorphic-fetch'
 
 const url = "http://localhost/wordpress/wp"
@@ -53,7 +54,7 @@ export default class extends React.Component {
             <div>
                 <Head>
                     <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
                     <title>
                     {
                         this.props.data.post.title.length > 0 ? this.props.data.post.title : 'Posts'
@@ -98,14 +99,23 @@ export default class extends React.Component {
                     </p>
                     <form className="comment-box">
                         <h3>New Comment</h3>
-                        <p>Name<sup>*</sup></p>
+                        <p>First Name:<sup>*</sup></p>
                         <input required type="text"/>
-                        <p>Email<sup>*</sup></p>
+                        <p>Last Name:<sup>*</sup></p>
+                        <input required type="text"/>
+                        <p>Email:<sup>*</sup></p>
                         <input required type="email"/>
-                        <p>Comment<sup>*</sup></p>
+                        <p>Comment:<sup>*</sup></p>
                         <textarea rows="5" required type="text" ></textarea>
                         <button>Submit</button>
                     </form>
+                    <section className="comments">
+                        {
+                            this.props.data.post.comments.map(function(post, i){
+                                return <Comment key={i} fname={post.author.first_name} lname={post.author.last_name} date={post.date.substr(0, 10)} content={post.content} />
+                            })
+                        }
+                    </section>
                 </main>
                     {
                         this.navCheckNext()

@@ -16,17 +16,11 @@ export default class extends Component {
                             }
                         }
                          }><a>{this.props.title}</a></Link></h3>
-                    <p dangerouslySetInnerHTML={
-                        {
-                        __html: this.props.content
-                        }
-                    }
-                    ></p>
                     <div className="category">
-                        <div className="cate-date">{this.props.date}</div>
+                        <div className="cate-date">{this.props.date}</div>/ &nbsp;
                         {
                             this.props.category != "" ? this.props.category.map(function(post, i) {
-                                return <Link href={{
+                                return <Link key={i} href={{
                                     pathname: '/categories',
                                     query: {
                                         s: post.slug
@@ -40,6 +34,12 @@ export default class extends Component {
                             }}><a><p>Uncategorized</p></a></Link>
                         }
                     </div>
+                    <p dangerouslySetInnerHTML={
+                        {
+                        __html: this.props.content
+                        }
+                    }
+                    ></p>
                 </div>
             </div>
         </div>

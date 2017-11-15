@@ -7,10 +7,12 @@
   "author": "Oshan Shrestha <oshan_shrestha@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.2",
     "gulp": "^3.9.1",
     "gulp-css": "^0.1.0",
     "gulp-less": "^3.3.2",
     "gulp-watch": "^4.3.11",
+    "lru-cache": "^4.1.1",
     "next": "^3.2.2",
     "react": "15.6.1",
     "react-dom": "15.6.1",

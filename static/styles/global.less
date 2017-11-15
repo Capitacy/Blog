@@ -26,7 +26,7 @@ body {
     height: 100%;
     width: 100%;
     color: #333;
-    font-family: 'Cinzel', cursive;
+    font-family: 'Cinzel', monospace;
     font-size: 17px;
     display: flex;
     justify-content: center;
@@ -138,15 +138,21 @@ body {
 
 @media (max-width: 768px) {
     body {
-        div {
-            width: inherit;
-        }
 
         main {
             width: 100%;
 
             .hero-head {
-                width: 767px;
+                width: 100%;
+            }
+            .blog-content {
+                width: 80%;
+
+                .blog-post {
+                    .category {
+                        position: relative;
+                    }
+                }
             }
         }
     }
